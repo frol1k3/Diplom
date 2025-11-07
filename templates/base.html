@@ -13,14 +13,6 @@
             <a href="{% url "catalog" %}" class="text_menu">Специалисты</a>
             <a href="{% url "info" %}" class="text_menu">О нас</a>
         </div>
-        <div>
-            {% if user.is_authenticated %}
-                <a class="text_menu" href= "{% url 'account' user.id %}" ><img class="cart" src="/static/account.png"></a>
-            {% else %}
-                <a href="{% url 'login' %}" class="text_menu">Войти</a>
-                <a href="{% url 'registration' %}" class="text_menu">Зарегистрироваться</a>
-            {% endif %}
-        </div>
     </header>    
 
     <main>
