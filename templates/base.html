@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="">
     <title>Главная</title>
 </head>
 <body>
     <header>
         <div>
-            <a href="{% url "main" %}" class="text_menu">Главная</a>
-            <a href="{% url "catalog" %}" class="text_menu">Специалисты</a>
-            <a href="{% url "info" %}" class="text_menu">О нас</a>
+            <a href="{% url "index" %}">Главная</a>
+            <a href="">Специалисты</a>
+            <a href="">О нас</a>
         </div>
     </header>    
 
     <main>
         {% block main %}{% endblock main %}
     </main>
+
     {% block script %}{% endblock script %}
 
     <footer>
